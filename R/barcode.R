@@ -69,8 +69,8 @@
     thisangle <- 90
     thisjust <- c("left", "top")
     pushViewport(viewport(x=0, y=0,
-                          w=convertHeight(unit(1, "npc"), "inches"),
-                          h=convertWidth(unit(1, "npc"), "inches"),
+                          width=convertHeight(unit(1, "npc"), "inches"),
+                          height=convertWidth(unit(1, "npc"), "inches"),
                           just=c("left", "bottom")))
   }
   if (labelouter) {
@@ -82,8 +82,8 @@
 
   vp.main <- viewport(x=outer.margins$left,
                       y=outer.margins$bottom,
-                      w=unit(1, "npc")-outer.margins$right-outer.margins$left,
-                      h=unit(1, "npc")-outer.margins$top-outer.margins$bottom,
+                      width=unit(1, "npc")-outer.margins$right-outer.margins$left,
+                      height=unit(1, "npc")-outer.margins$top-outer.margins$bottom,
                       just=thisjust, angle=thisangle,
                       name="main", clip="off")
   pushViewport(vp.main)

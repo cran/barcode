@@ -52,8 +52,8 @@
   # Trivial viewport to properly create axis labels.
   pushViewport(viewport(x=xleftoffset, 
                         y=unit(0, "npc"),
-                        w=unit(1, "npc")-xleftoffset-xrightoffset,
-                        h=unit(1, "npc"),
+                        width=unit(1, "npc")-xleftoffset-xrightoffset,
+                        height=unit(1, "npc"),
                         xscale=c(minx, maxx),
                         just=c("left", "bottom")))
   if (!is.null(axisloc)) {
@@ -87,8 +87,8 @@
       # The barcode part of things:
       vp.barcode <- viewport(x=xleftoffset,
                              y=unit((i-1)/K, "npc") + unit(0.05/K, "npc"),
-                             w=unit(1, "npc")-xleftoffset-xrightoffset,
-                             h=unit(1/K, "npc")*bcspace - unit(0.05/K, "npc"),
+                             width=unit(1, "npc")-xleftoffset-xrightoffset,
+                             height=unit(1/K, "npc")*bcspace - unit(0.05/K, "npc"),
                              xscale=c(minx, maxx), yscale=c(0,1),
                              just=c("left", "bottom"),
                              name="barcode", clip="off")
@@ -99,13 +99,13 @@
       # The histogram part of things:
       vp.hist <- viewport(x=xleftoffset,
                           y=unit((i-1)/K, "npc")+unit(1/K, "npc")*bcspace,
-                          w=unit(1, "npc")-xrightoffset-xleftoffset,
-                          h=unit(1/K, "npc")-unit(1/K, "npc")*bcspace,
+                          width=unit(1, "npc")-xrightoffset-xleftoffset,
+                          height=unit(1/K, "npc")-unit(1/K, "npc")*bcspace,
                           xscale=c(minx, maxx), yscale=c(0,1),
                           just=c("left", "bottom"),
                           name="hist", clip="off")
       pushViewport(vp.hist)
-      vp.buffer <- viewport(x=0, y=0.05, w=1, h=0.9, just=c("left", "bottom"),
+      vp.buffer <- viewport(x=0, y=0.05, width=1, height=0.9, just=c("left", "bottom"),
                             xscale=c(minx, maxx), yscale=c(0,1))
       pushViewport(vp.buffer)
 
