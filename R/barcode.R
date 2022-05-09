@@ -22,8 +22,8 @@
                       outerbox=TRUE
               ) {
 
-  if (!require(grid)) stop("library(grid) is required and unavailable.\n\n")
-  if (!require(lattice)) stop("library(lattice) is required and unavailable.\n\n")
+  #if (!require(grid)) stop("library(grid) is required and unavailable.\n\n")
+  #if (!require(lattice)) stop("library(lattice) is required and unavailable.\n\n")
 
   if (!is.null(labelloc)) {
     if (labelloc=="right" | labelloc=="top") labelloc <- FALSE
