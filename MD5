@@ -1,7 +1,7 @@
-bdc18f166cb8dd6d5d85089ba7338889 *DESCRIPTION
+249a6be1063701b3c89d990eed97ec77 *DESCRIPTION
 743b5c519000660161f9a4491a4aa7c9 *NAMESPACE
-27f54246f704ee2267d58fa06421ce42 *R/barcode.R
-07e079eddbe99764a164bffbc34086a9 *R/barcode.panel.R
+0236442693e5a58dbea5a57fbbcc7d31 *R/barcode.R
+203b72f0570344c3beccdbaa8968f117 *R/barcode.panel.R
 887636534c591bb71e515a0314627211 *data/NewHavenResidential.rda
 d16f8ff75b9e9de712204a88bdb9465b *man/NewHavenResidential.Rd
-c19c38809953b672ac9767d65cd9a9c8 *man/barcode.Rd
+ada17958000d020392fe8ea17f46a06a *man/barcode.Rd
